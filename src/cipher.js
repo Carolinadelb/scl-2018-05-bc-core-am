@@ -7,15 +7,16 @@ window.cipher = {
     for (let i= 0; i<text.length;i++){
      //volver texto a mayúscula
       let tUpper = text.toUpperCase(i);
+      // pasa de letra a numero ascii
       let finalT = tUpper.charCodeAt(i);
-      // Formula Michelle
-      
-     //Para espacio entre palabras
-      if (finalT === 32){
+       //Para espacio entre palabras
+       if (finalT === 32){
+         //para los espacios
         textCipher += " ";
         } else{ 
-       //vuelvo a transformar a string el caracter numerico desplazado  
+       // Formula Michelle 
        let finalTxt = (finalT - 65 + parseInt(shift)) % 26 + 65; 
+       //Para que vuelva de n a letra
        textCipher+= String.fromCharCode(finalTxt);
        }   
     }
@@ -27,20 +28,23 @@ window.cipher = {
   decode: (text2, shiftD) => {
     let textDecipher = "";
     shiftD = parseInt(shiftD);
-    //Iteración
+    //formala de Iteración i
     for (let i= 0; i<text2.length; i++){
       //volver texto en mayúsculas
       let tUpperD = text2.toUpperCase();
+      //pasa de letra a numero ascii
       let finalTD = (tUpperD.charCodeAt(i));
       //Para los espacios 32(es espacio) así que mostarra espacio
       if (finalTD === 32){
-        // no sobrescribe, se suman 
+        // para los espacios: 
         textDecipher += " ";
         } else { 
+        //formula Michelle
         let resultD = (finalTD - 65 - parseInt(shiftD)) % 26 + 65;
         if (resultD < 65) {
           resultD +=26;
         }
+        //Para que vuelva de n° a letra
         let showD = String.fromCharCode(resultD);
         textDecipher += showD;
       }
