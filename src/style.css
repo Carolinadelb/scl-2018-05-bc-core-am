@@ -126,17 +126,6 @@ body {
   float: right;
 }
 
-#des {
-  width: 50%;
-  height: 150px;
-  padding: 5px 5px;
-  border: 2px solid rgba(136, 231, 179, 1);
-  border-radius: 2px;
-  background-color: #f8f8f8;
-  resize: none;
-  display: inline-block;
-}
-
 h3 {
   font-size: 3.0vh;
 }
