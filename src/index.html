@@ -7,13 +7,16 @@
   <link rel= "shortcut icon" type="png" href="../assets/img/caesarlogo.png">
   <link rel="stylesheet" href="style.css">
  </head>
+</head>
 <body>
+
+  
 <!-- Contenedor de todooo! -->
 <section class = "container">
 
     <!-- Sección del logo -->
     <section id = "logo">
-      <img src="../assets/img/caesarlogo.png" style="max-width:100%;height:auto;">
+      <img class="logo1" src="../assets/img/caesarlogo.png">
     </section>
 
     <!-- Título -->
@@ -27,16 +30,16 @@
 
    <!--Sección cifrado  -->
    <section id = "cip1">
-     <h3>Escribe tu mensaje:</h3>
-     <input id ="text1"type="text" placeholder="Tu texto va aquí."> 
+      <h3>Escribe tu mensaje:</h3>
+     <input id ="msje1"type="text" placeholder="Tu texto va aquí."> 
      
      <section class = "mov">
-     <h5>N° de desplazamiento: </h5>
-     <input class = "n1" type= "number" min="1" max="100">
-     <button id = "btn-send1">Enviar</button>
+      <h5>N° de desplazamiento: </h5>
+      <input id = "shift1" type= "text">
+      <button id = "btn1">Enviar</button>
      </section>
       <!-- respuesta que despues lo hago con pinnerhtml-->
-     <p class = "res">Aquí va la respuesta</p>
+     <p id= "res"> </p>
     
     </section>
 
@@ -44,16 +47,18 @@
     <section id = "des1">
         
       <h3>Descifrar:</h3>
-      <input id = "des" type="text" placeholder="Escribe tu mensaje para descrifrar aquí.">
+      <input id = "msje2" type="text" placeholder="Escribe tu mensaje para descrifrar aquí.">
       <section class = "mov">
       <h5>N° de desplazamiento: </h5>
-      <input class = "n1" type= "number" min="1" max="100">
-      <button id = "btn-send2">Enviar</button>
+      <input id= "shift2" type= "text">
+      <button id = "btn2">Enviar</button>
       </section>
      <!-- respuesta que despues lo hago con pinnerhtml-->
-      <p class = "res">Aquí va la respuesta</p>
-    </section>
+      <p id = "msje_descifrado"> </p>
+      </section>
 
+
+</section>
 
 </section>
   <div id="root"></div>
