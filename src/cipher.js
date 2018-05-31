@@ -6,19 +6,21 @@ window.cipher = {
     //formula de iteración i
     for (let i= 0; i<text.length;i++){
      //volver texto a mayúscula
-      let tUpper = text.toUpperCase();
-     // Formula Michelle
-      let finalT = (tUpper.charCodeAt(i) - 65 + parseInt(shift)) % 26 + 65; 
+      let tUpper = text.toUpperCase(i);
+      let finalT = tUpper.charCodeAt(i);
+      // Formula Michelle
+      
      //Para espacio entre palabras
       if (finalT === 32){
         textCipher += " ";
         } else{ 
-      //vuelvo a transformar a string el caracter numerico desplazado  
-        textCipher+= String.fromCharCode(finalT);
+       //vuelvo a transformar a string el caracter numerico desplazado  
+       let finalTxt = (finalT - 65 + parseInt(shift)) % 26 + 65; 
+       textCipher+= String.fromCharCode(finalTxt);
        }   
     }
     //Respuesta final:
-    return "Tu Cifrado es: " + textCipher
+    return "Tu Cifrado es: " + textCipher;
 
   },
 
