@@ -1,3 +1,4 @@
+/* Fondo, foto y colores */
 body {
   background: url("../assets/img/fondo-brilloso.png"), linear-gradient(to right, rgba(136, 231, 179, 1), rgba(193, 136, 231, 1));
   text-align: center;
@@ -5,7 +6,7 @@ body {
   font-family: 'PT Sans Narrow', sans-serif;
        
 }
-
+/* Contenedor */
 .container {
   background-color: white;
   border-color: grey;
@@ -16,24 +17,40 @@ body {
   box-shadow: 10px 10px 8px #888888;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Para Logo */
 #logo1 {
   max-width:100%;
   height:auto;
 }
-
+/* Título como usar*/
+h4 {
+  color: rgba(88, 28, 109, 1);
+}
+/* Lista de instrucciones */
+ul {        
+  list-style-type: none;
+  text-align: justify;
+  line-height: 1.6;
+}
+/* Fin de instrucciones */
+#insF {
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+}
+/* Respuesta */
 #res {
   color: rebeccapurple;
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/*Respuesta descifrado */
 #msje_descifrado {
   color: rebeccapurple;
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/*Boton 1*/
 #btn1 {
   background-color: rgb(149, 74, 192); 
   border: double rgba(136, 231, 179, 1);
@@ -44,7 +61,7 @@ body {
   display: inline-block;
   font-size: 15px;
 }
-
+/*Boton hover*/
 #btn1:hover {
   background-color: white;
   border: double rgba(136, 231, 179, 1);
@@ -56,7 +73,7 @@ body {
   font-size: 15px;
   box-shadow: 2px 5px grey;
 }
-
+/*boton 2*/
 #btn2 {
   background-color: rgb(149, 74, 192); 
   border: double rgba(136, 231, 179, 1);
@@ -66,7 +83,7 @@ body {
   text-align: center;
   font-size: 15px;
 }
-
+/*Botón 2 hover*/
 #btn2:hover {
   background-color: white;
   border: double rgba(136, 231, 179, 1);
@@ -77,7 +94,7 @@ body {
   font-size: 15px;
   box-shadow: 2px 5px grey;
 }
-
+/* cuadro de texto 1*/
 #msje1 {
   width: 50%;
   height: 150px;
@@ -88,7 +105,7 @@ body {
   resize: none;
   display: inline-block;
 }
-
+/*Cuadro de texto 2*/
 #msje2 {
   width: 50%;
   height: 150px;
@@ -99,7 +116,7 @@ body {
   resize: none;
   display: inline-block;
 }
-
+/*Caja de números 1*/
 #shift1 {
   width: 15%;
   height: 10px;
@@ -110,7 +127,7 @@ body {
   resize: none;
   display: inline-block;
 }
-
+/*Caja de números 2*/
 #shift2 {
   width: 15%;
   height: 10px;
@@ -121,11 +138,11 @@ body {
   resize: none;
   display: inline-block;
 }
-
+/*Para mover la sección*/
 .mov {
   float: right;
 }
-
+/*Texto Escribe tu y Descifrar */
 h3 {
   font-size: 3.0vh;
 }
