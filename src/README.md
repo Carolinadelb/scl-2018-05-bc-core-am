@@ -1,4 +1,4 @@
-![Caesar Cipher Logo]()
+
 # Caesar Cipher
 
 ## Cómo Descargar 
