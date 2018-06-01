@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <link rel= "shortcut icon" type="png" href="../src/assets/img/caesarlogo.png">
+  <link rel="stylesheet" href="style.css">
+ </head>
+</head>
+<body>
+
+  
+<!-- Contenedor de todooo! -->
+<section class = "container">
+
+    <!-- Sección del logo -->
+    <section id = "logo">
+      <img class="logo1" src="../src/assets/img/caesarlogo.png">
+    </section>
+
+    <!-- Título -->
+    <h1>¡Envía todos tus mensajes de forma secreta!</h1>
+    
+    <!-- Sección Instrucciones -->
+    <section id = "instructions">
+      <h4>¿Cómo usar?</h4>
+      <ul>
+        <li>1) Escribe o pega tu mensaje en el cuadro de texto.</li>
+        <li>2) Luego escribe el "número de desplazamiento", en que quieres que se "cifre" tu mensaje.</li>
+        <li>3) Haz click en el botón "Enviar", (esta al lado de donde pusiste el "número de desplazamiento").</li>
+        <li>4) Abajo del cuadro de texto aparecerá mágicamente tu mensaje.</li>
+        <li id ="insF">¡Listo ahora puedes hacer mensajes cifrados y mantener tu privacidad!</li>
+       </ul>
+    </section>
+
+   <!--Sección cifrado  -->
+   <section id = "cip1">
+      <h3>Escribe tu mensaje:</h3>
+     <input id ="msje1"type="text" placeholder="Tu texto va aquí."> 
+     
+     <section class = "mov">
+      <h5>N° de desplazamiento: </h5>
+      <input id = "shift1" type= "text">
+      <button id = "btn1">Enviar</button>
+     </section>
+      <!-- Respuesta de Cifrado-->
+     <p id= "res"> </p>
+    
+    </section>
+
+     <!-- Sección descifrado  -->
+    <section id = "des1">
+        
+      <h3>Descifrar:</h3>
+      <input id = "msje2" type="text" placeholder="Escribe tu mensaje para descrifrar aquí.">
+      <section class = "mov">
+      <h5>N° de desplazamiento: </h5>
+      <input id= "shift2" type= "text">
+      <button id = "btn2">Enviar</button>
+      </section>
+     <!-- Respuesta de Descifrado-->
+      <p id = "msje_descifrado"> </p>
+      </section>
+
+
+</section>
+
+</section>
+  <div id="root"></div>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
